@@ -1,8 +1,5 @@
-def cantidad_perdidas(notas):
-    perdidas = 0
-
-    for nota in notas:
-        if nota < 3:
-            perdidas += 1
-
-    return perdidas
+def cantidad_perdidas(notas, umbral=3.0):
+    if not isinstance(notas, list):
+        raise TypeError("El parámetro 'notas' debe ser una lista")
+    
+    return sum(1 for nota in notas if nota < umbral)
