@@ -4,7 +4,7 @@ from src.funciones import cantidad_perdidas
 class TestCantidadPerdidas(unittest.TestCase):  # ← clase obligatoria
 
     def test_sin_perdidas(self):                # ← self en cada método
-        notas = [3.0, 4.0, 5.0]
+        notas = [3.0, 4.0, 5.0, 2]
         self.assertEqual(cantidad_perdidas(notas), 0)
 
     def test_con_perdidas(self):
