@@ -10,4 +10,4 @@ def test_maxima_nota():
     assert maxima_nota([]) == 0
     
     
-    assert maxima_nota([0.0, 1.5, 4.9, 3]) == 4.9
+    assert maxima_nota([0.0, 1.5, 4.9, 3.0]) == 4.9
